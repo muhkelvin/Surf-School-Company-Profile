@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Instructors | Kala Surf Co. Batu Karas</title>
+  <meta name="description" content="Kenali tim instruktur surfing Kala Surf Co. di Batu Karas. Berpengalaman belasan tahun, tersertifikasi ISA dan keselamatan laut, dengan pendekatan mengajar yang hangat.">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-salt-white text-deep-tide selection:bg-surf-coral selection:text-salt-white min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 bg-salt-white/95 backdrop-blur border-b border-deep-tide/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Wordmark -->
+      <a href="index.html" class="group flex flex-col focus:outline-none" aria-label="Kala Surf Co. Home">
+        <span class="font-serif text-2xl font-bold tracking-tight text-deep-tide group-hover:text-surf-coral transition-colors duration-200">
+          KALA SURF CO.
+        </span>
+        <span class="text-[11px] uppercase tracking-widest text-deep-tide/60 font-medium">
+          Batu Karas &bull; West Java
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Main Navigation">
+        <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Home</a>
+        <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">About</a>
+        <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Lessons</a>
+        <a href="instructors.html" class="text-surf-coral font-semibold relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-surf-coral">Instructors</a>
+        <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Gallery</a>
+        <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20ketersediaan%20sesi%20bersama%20instruktur."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+          <svg class="w-4 h-4 text-surf-coral fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.561 3.78 1.533 5.328L2.086 21.914l4.721-1.428A10.015 10.015 0 0 0 12.031 22C17.566 22 22 17.535 22 12.031 22 6.496 17.566 2 12.031 2zm0 18.25c-1.635 0-3.15-.461-4.444-1.258l-.318-.195-2.806.849.865-2.736-.208-.332A8.22 8.22 0 0 1 3.781 12.03c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25zm4.516-6.177c-.247-.123-1.464-.722-1.691-.804-.227-.082-.392-.123-.558.123-.165.247-.64 0.804-.784.969-.144.165-.288.185-.535.062-.247-.123-1.043-.385-1.986-1.226-.734-.655-1.23-1.464-1.374-1.711-.144-.247-.015-.381.108-.504.111-.111.247-.288.371-.432.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.432-.062-.123-.558-1.343-.764-1.84-.201-.484-.405-.418-.558-.426l-.474-.008c-.165 0-.432.062-.658.309-.227.247-.866.845-.866 2.062 0 1.217.887 2.392 1.011 2.557.124.165 1.745 2.665 4.228 3.738.591.255 1.053.407 1.413.521.593.189 1.134.162 1.561.098.476-.071 1.464-.598 1.67-1.175.206-.577.206-1.072.144-1.175-.062-.103-.227-.165-.474-.288z"/>
+          </svg>
+          <span>Tanya Sesi</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka Menu Navigasi"
+              class="md:hidden p-2 rounded-lg text-deep-tide hover:bg-warm-sand/30 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-deep-tide/10 bg-salt-white px-6 py-5 flex flex-col gap-4 text-base font-medium" aria-label="Mobile Navigation">
+      <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Home</a>
+      <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide py-1">About Us</a>
+      <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Lessons & Programs</a>
+      <a href="instructors.html" class="text-surf-coral font-semibold">Instructors</a>
+      <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Gallery</a>
+      <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Contact & Location</a>
+      <div class="pt-3 border-t border-deep-tide/10">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20ketersediaan%20sesi%20bersama%20instruktur."
+           target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center gap-2 bg-surf-coral text-salt-white py-3 rounded-xl font-semibold shadow text-sm">
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    
+    <!-- Header Section -->
+    <section class="py-16 md:py-24 border-b border-deep-tide/10 bg-warm-sand/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-3">Tim Pengajar</span>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-deep-tide leading-tight mb-6">
+            Pemandu Ombak Berhati Hangat & Tersertifikasi.
+          </h1>
+          <p class="text-lg text-deep-tide/80 leading-relaxed font-light">
+            Kami percaya bahwa instruktur selancar yang hebat bukan dinilai dari seberapa radikal trik yang mereka lakukan, melainkan seberapa tenang dan aman mereka membuat siswa merasa nyaman di dalam air.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Instructors Profiles -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 space-y-16">
+        
+        <!-- Profile 1: Wayan "Boma" Kusuma -->
+        <article class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 lg:p-12 items-center">
+          <div class="lg:col-span-4 flex flex-col items-center text-center">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-deep-tide/20 shadow-md mb-6">
+              <img src="./assets/images/instructor_wayan.jpg" 
+                   alt="Portrait Wayan Kusuma, Head Surf Coach" 
+                   class="w-full h-full object-cover" loading="lazy" width="224" height="224">
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-deep-tide/70 bg-sea-glass/50 px-3.5 py-1 rounded-full mb-2">
+              Pengalaman 14+ Tahun
+            </span>
+            <div class="text-xs text-deep-tide/80 space-y-1">
+              <p><span class="font-medium text-deep-tide">Bahasa:</span> Bahasa Indonesia, English</p>
+              <p><span class="font-medium text-deep-tide">Sertifikasi:</span> ISA Surf Coach Level 2</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-xs uppercase tracking-widest font-semibold text-surf-coral">Head Surf Instructor & Founder</span>
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide font-bold mb-4">Wayan "Boma" Kusuma</h2>
+              
+              <div class="space-y-4 text-sm text-deep-tide/80 leading-relaxed mb-6">
+                <p>
+                  Lahir di pesisir selatan dan menghabiskan masa remajanya menjelajahi ombak Jawa Barat dan Kepulauan Mentawai. Wayan mendirikan Kala Surf Co. dengan visi menciptakan standar sekolah selancar yang mengutamakan keselamatan medis dan pedagogi modern.
+                </p>
+                <p>
+                  Pendekatan mengajarnya sangat analitis namun disampaikan dengan bahasa yang santai. Wayan ahli dalam membedah biomekanik kayuhan, mendeteksi ketegangan otot bahu siswa pemula, serta mengajarkan cara membaca energi gelombang dari kejauhan.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 p-4 rounded-xl bg-salt-white border border-deep-tide/10 mb-6">
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Spesialisasi Mengajar:</span>
+                  <p class="text-deep-tide/75">Biomekanik pop-up, mengatasi rasa takut kedalaman air, dan Intermediate line-up management.</p>
+                </div>
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Kualifikasi Keselamatan:</span>
+                  <p class="text-deep-tide/75">Bronze Medallion Surf Lifesaving & First Aid CPR tersertifikasi internasional.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <span class="font-serif italic text-xs text-deep-tide/80">"Laut selalu memberikan apa yang Anda butuhkan, asalkan Anda mendengarkannya."</span>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20konsultasi%20sesi%20surfing%20bersama%20Wayan%20Boma."
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors">
+                <span>Pesan Sesi Bersama Wayan</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile 2: Sarah Lindqvist -->
+        <article class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 lg:p-12 items-center">
+          <div class="lg:col-span-4 flex flex-col items-center text-center">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-deep-tide/20 shadow-md mb-6">
+              <img src="./assets/images/instructor_sarah.jpg" 
+                   alt="Portrait Sarah Lindqvist, Classic Longboard Coach" 
+                   class="w-full h-full object-cover" loading="lazy" width="224" height="224">
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-deep-tide/70 bg-sea-glass/50 px-3.5 py-1 rounded-full mb-2">
+              Pengalaman 9+ Tahun
+            </span>
+            <div class="text-xs text-deep-tide/80 space-y-1">
+              <p><span class="font-medium text-deep-tide">Bahasa:</span> English, Swedish, Bahasa Indonesia</p>
+              <p><span class="font-medium text-deep-tide">Sertifikasi:</span> ISA Surf Coach Level 1</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-xs uppercase tracking-widest font-semibold text-surf-coral">Longboard Coach & Waterwoman</span>
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide font-bold mb-4">Sarah Lindqvist</h2>
+              
+              <div class="space-y-4 text-sm text-deep-tide/80 leading-relaxed mb-6">
+                <p>
+                  Berasal dari Swedia dan telah menetap di pesisir Jawa Barat selama lebih dari 6 tahun. Sarah memiliki spesialisasi dalam seni longboarding klasik bergaya single-fin, teknik cross-stepping yang anggun, serta kontrol keseimbangan tubuh di bagian hidung papan (noseriding).
+                </p>
+                <p>
+                  Gaya mengajarnya sangat lembut dan suportif, sangat disukai oleh siswa perempuan dan pemula yang menginginkan instruksi tanpa tekanan kompetisi. Sarah membimbing muridnya menemukan ketenangan batin saat mengapung di antara deretan ombak.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 p-4 rounded-xl bg-salt-white border border-deep-tide/10 mb-6">
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Spesialisasi Mengajar:</span>
+                  <p class="text-deep-tide/75">Cross-stepping, flow & trimming, postur tubuh elegan, dan pembimbingan anak-anak & remaja.</p>
+                </div>
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Kualifikasi Khusus:</span>
+                  <p class="text-deep-tide/75">Sertifikasi Yoga for Surfers & Pelatih Renang Terbuka (Open Water Lifeguard).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <span class="font-serif italic text-xs text-deep-tide/80">"Selancar adalah tarian di atas gelombang air yang terus bergerak."</span>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20konsultasi%20sesi%20longboard%20bersama%20Sarah."
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors">
+                <span>Pesan Sesi Bersama Sarah</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile 3: Rizki Pratama -->
+        <article class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 lg:p-12 items-center">
+          <div class="lg:col-span-4 flex flex-col items-center text-center">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-deep-tide/20 shadow-md mb-6">
+              <img src="./assets/images/instructor_rizki.jpg" 
+                   alt="Portrait Rizki Pratama, Local Point Break Specialist" 
+                   class="w-full h-full object-cover" loading="lazy" width="224" height="224">
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-deep-tide/70 bg-sea-glass/50 px-3.5 py-1 rounded-full mb-2">
+              Pengalaman 8+ Tahun
+            </span>
+            <div class="text-xs text-deep-tide/80 space-y-1">
+              <p><span class="font-medium text-deep-tide">Bahasa:</span> Bahasa Indonesia, Sunda, English</p>
+              <p><span class="font-medium text-deep-tide">Sertifikasi:</span> Indonesian Surf Lifeguard / Balawista</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-xs uppercase tracking-widest font-semibold text-surf-coral">Point Break Specialist & Junior Coach</span>
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide font-bold mb-4">Rizki Pratama</h2>
+              
+              <div class="space-y-4 text-sm text-deep-tide/80 leading-relaxed mb-6">
+                <p>
+                  Putra asli desa Batukaras yang tumbuh besar bermain ombak di teluk Legok Pari sejak usia tujuh tahun. Rizki mengenali setiap lekukan pasir, arah angin musiman, dan perubahan pasang surut air layaknya halaman belakang rumahnya sendiri.
+                </p>
+                <p>
+                  Kepribadiannya yang ceria, humoris, dan penuh kesabaran membuat suasana latihan selalu penuh gelak tawa. Bagi murid yang merasa tegang saat pertama kali ombak datang mendekat, Rizki memiliki cara unik untuk menenangkan pikiran mereka dan memberikan dorongan di detik yang paling tepat.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 p-4 rounded-xl bg-salt-white border border-deep-tide/10 mb-6">
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Spesialisasi Mengajar:</span>
+                  <p class="text-deep-tide/75">Kelas pemula whitewater, sesi grup ceria keluarga, dan panduan membaca dasar pasir.</p>
+                </div>
+                <div>
+                  <span class="font-semibold text-deep-tide block mb-1">Keahlian Lokal:</span>
+                  <p class="text-deep-tide/75">Anggota aktif Balawista (Penjaga Pantai Pangandaran) & pemandu lokal teluk.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <span class="font-serif italic text-xs text-deep-tide/80">"Di Batu Karas, ombak ada untuk dinikmati bersama teman-teman."</span>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20konsultasi%20sesi%20pemula%20bersama%20Rizki."
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors">
+                <span>Pesan Sesi Bersama Rizki</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Coaching Safety & Credibility Pillars -->
+    <section class="py-20 bg-sea-glass/25 border-y border-deep-tide/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Standar Pengajaran</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide mb-4">
+            Komitmen Profesionalisme Tanpa Kompromi.
+          </h2>
+          <p class="text-sm text-deep-tide/75 leading-relaxed">
+            Kepercayaan Anda adalah amanah berharga bagi kami. Berikut adalah standar ketat yang kami terapkan pada seluruh instruktur kami.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-xl bg-white border border-deep-tide/10">
+            <span class="font-serif text-xl font-bold text-deep-tide block mb-2">Sertifikasi Berlaku</span>
+            <p class="text-xs text-deep-tide/75 leading-relaxed">
+              Setiap instruktur wajib memegang lisensi International Surfing Association (ISA) atau sertifikasi resmi Balawista yang diperbarui secara berkala.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-white border border-deep-tide/10">
+            <span class="font-serif text-xl font-bold text-deep-tide block mb-2">Zero Intimidation</span>
+            <p class="text-xs text-deep-tide/75 leading-relaxed">
+              Tidak ada kata meremehkan ketakutan siswa. Semua materi disampaikan dengan rasa hormat, penjelasan ilmiah, dan penyesuaian ritme tubuh siswa.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-white border border-deep-tide/10">
+            <span class="font-serif text-xl font-bold text-deep-tide block mb-2">Etika Lingkungan</span>
+            <p class="text-xs text-deep-tide/75 leading-relaxed">
+              Instruktur kami aktif mendidik siswa mengenai ekosistem laut, terumbu karang, dan konservasi penyu yang bertelur di pesisir selatan Jawa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="py-16 bg-deep-tide text-salt-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-4">
+          Ingin Diskusi Langsung Mengenai Kebutuhan Khusus Anda?
+        </h2>
+        <p class="text-sm text-salt-white/80 max-w-lg mx-auto mb-8 font-light">
+          Bicarakan preferensi Anda dengan tim kami via WhatsApp. Kami dengan senang hati mencocokkan Anda dengan instruktur yang paling pas.
+        </p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20tanya%20mengenai%20jadwal%20instruktur%20dan%20rekomendasi%20sesi."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-surf-coral hover:bg-surf-coral/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-8 py-3.5 rounded-full shadow-lg transition-all">
+          <span>Hubungi Tim Instruktur via WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-deep-tide text-salt-white border-t border-salt-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-salt-white/10">
+        
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <span class="font-serif text-2xl font-bold tracking-tight mb-2">KALA SURF CO.</span>
+          <p class="text-xs uppercase tracking-widest text-ocean-mist mb-4">Batu Karas &bull; Est. 2018</p>
+          <p class="text-xs text-salt-white/70 leading-relaxed mb-6 max-w-sm">
+            Sekolah surfing berorientasi pada keselamatan, etika laut, dan pelestarian komunitas pesisir di teluk ombak Batu Karas, Jawa Barat.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-salt-white/80">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Musim Ombak Terbaik: Sepanjang Tahun</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Navigasi</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="index.html" class="hover:text-surf-coral transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-surf-coral transition-colors">Tentang Kami</a></li>
+            <li><a href="lessons.html" class="hover:text-surf-coral transition-colors">Program Lesson</a></li>
+            <li><a href="instructors.html" class="hover:text-surf-coral transition-colors">Instruktur</a></li>
+            <li><a href="gallery.html" class="hover:text-surf-coral transition-colors">Galeri Dokumentasi</a></li>
+            <li><a href="contact.html" class="hover:text-surf-coral transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Pilihan Lesson</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="lessons.html#beginner" class="hover:text-surf-coral transition-colors">Beginner Surf Lesson</a></li>
+            <li><a href="lessons.html#private" class="hover:text-surf-coral transition-colors">Private 1-on-1 Coaching</a></li>
+            <li><a href="lessons.html#group" class="hover:text-surf-coral transition-colors">Group & Friends Session</a></li>
+            <li><a href="lessons.html#intermediate" class="hover:text-surf-coral transition-colors">Intermediate Wave Reading</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Titik Sekolah & Hubungi</h4>
+          <address class="not-italic text-xs text-salt-white/75 space-y-2.5">
+            <p>Jl. Pantai Batu Karas No. 14, Desa Batukaras, Cijulang, Pangandaran, Jawa Barat 46394</p>
+            <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-surf-coral font-medium hover:underline">+62 812-3456-7890</a></p>
+            <p>Email: <a href="mailto:hello@kalasurfco.com" class="hover:underline">hello@kalasurfco.com</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-salt-white/60">
+        <p>&copy; 2026 Kala Surf Co. Seluruh hak cipta dilindungi.</p>
+        <p class="text-[11px] text-salt-white/50">
+          Batu Karas, Pangandaran, Jawa Barat &bull; Authentic Surf Sanctuary
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

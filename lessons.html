@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surf Lessons & Programs | Kala Surf Co. Batu Karas</title>
+  <meta name="description" content="Program kursus selancar profesional di Batu Karas. Pilihan kelas pemula, privat 1-on-1, grup rombongan, dan intermediate coaching dengan rasio instruktur aman.">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-salt-white text-deep-tide selection:bg-surf-coral selection:text-salt-white min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 bg-salt-white/95 backdrop-blur border-b border-deep-tide/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Wordmark -->
+      <a href="index.html" class="group flex flex-col focus:outline-none" aria-label="Kala Surf Co. Home">
+        <span class="font-serif text-2xl font-bold tracking-tight text-deep-tide group-hover:text-surf-coral transition-colors duration-200">
+          KALA SURF CO.
+        </span>
+        <span class="text-[11px] uppercase tracking-widest text-deep-tide/60 font-medium">
+          Batu Karas &bull; West Java
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Main Navigation">
+        <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Home</a>
+        <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">About</a>
+        <a href="lessons.html" class="text-surf-coral font-semibold relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-surf-coral">Lessons</a>
+        <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Instructors</a>
+        <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Gallery</a>
+        <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20ketersediaan%20dan%20detail%20paket%20Surf%20Lesson."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+          <svg class="w-4 h-4 text-surf-coral fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.561 3.78 1.533 5.328L2.086 21.914l4.721-1.428A10.015 10.015 0 0 0 12.031 22C17.566 22 22 17.535 22 12.031 22 6.496 17.566 2 12.031 2zm0 18.25c-1.635 0-3.15-.461-4.444-1.258l-.318-.195-2.806.849.865-2.736-.208-.332A8.22 8.22 0 0 1 3.781 12.03c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25zm4.516-6.177c-.247-.123-1.464-.722-1.691-.804-.227-.082-.392-.123-.558.123-.165.247-.64 0.804-.784.969-.144.165-.288.185-.535.062-.247-.123-1.043-.385-1.986-1.226-.734-.655-1.23-1.464-1.374-1.711-.144-.247-.015-.381.108-.504.111-.111.247-.288.371-.432.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.432-.062-.123-.558-1.343-.764-1.84-.201-.484-.405-.418-.558-.426l-.474-.008c-.165 0-.432.062-.658.309-.227.247-.866.845-.866 2.062 0 1.217.887 2.392 1.011 2.557.124.165 1.745 2.665 4.228 3.738.591.255 1.053.407 1.413.521.593.189 1.134.162 1.561.098.476-.071 1.464-.598 1.67-1.175.206-.577.206-1.072.144-1.175-.062-.103-.227-.165-.474-.288z"/>
+          </svg>
+          <span>Tanya Sesi</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka Menu Navigasi"
+              class="md:hidden p-2 rounded-lg text-deep-tide hover:bg-warm-sand/30 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-deep-tide/10 bg-salt-white px-6 py-5 flex flex-col gap-4 text-base font-medium" aria-label="Mobile Navigation">
+      <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Home</a>
+      <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide py-1">About Us</a>
+      <a href="lessons.html" class="text-surf-coral font-semibold">Lessons & Programs</a>
+      <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Instructors</a>
+      <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Gallery</a>
+      <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Contact & Location</a>
+      <div class="pt-3 border-t border-deep-tide/10">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20ketersediaan%20dan%20detail%20paket%20Surf%20Lesson."
+           target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center gap-2 bg-surf-coral text-salt-white py-3 rounded-xl font-semibold shadow text-sm">
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    
+    <!-- Header Hero -->
+    <section class="py-16 md:py-24 border-b border-deep-tide/10 bg-warm-sand/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-3">Program & Kurikulum</span>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-deep-tide leading-tight mb-6">
+            Pilihan Sesi Surfing Terstruktur di Ombak Batu Karas.
+          </h1>
+          <p class="text-lg text-deep-tide/80 leading-relaxed font-light">
+            Dirancang untuk seluruh tingkat kemahiran: dari pemula yang baru pertama kali menyentuh papan hingga peselancar yang ingin memperbaiki teknik transisi dan posisi lineup.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4 text-xs text-deep-tide/75">
+            <span class="bg-salt-white px-3.5 py-1.5 rounded-full border border-deep-tide/10 font-medium">Dasar Pasir Tanpa Karang Tajam</span>
+            <span class="bg-salt-white px-3.5 py-1.5 rounded-full border border-deep-tide/10 font-medium">Instruktur Pendamping Penuh</span>
+            <span class="bg-salt-white px-3.5 py-1.5 rounded-full border border-deep-tide/10 font-medium">Peralatan Lengkap Disediakan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Programs List -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 space-y-16">
+        
+        <!-- Program 1: Beginner Surf Lesson -->
+        <article id="beginner" class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-5 relative min-h-[300px]">
+            <img src="./assets/images/lesson_beginner.jpg" 
+                 alt="Siswa pemula sedang mendengarkan penjelasan instruktur di bibir pantai" 
+                 class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            <span class="absolute top-4 left-4 bg-salt-white text-deep-tide text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow">
+              Level 1 &bull; Pemula Mutlak
+            </span>
+          </div>
+          <div class="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-widest text-surf-coral font-semibold">Fondasi Pertama</span>
+                <span class="text-xs text-deep-tide/60 bg-sea-glass/40 px-3 py-1 rounded-full">Durasi: 2 Jam Penuh</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide font-bold mb-4">Beginner Surf Lesson</h2>
+              <p class="text-sm text-deep-tide/80 leading-relaxed mb-6">
+                Program ideal bagi siapa pun yang belum pernah berselancar. Kami memandu Anda memahami ritme air, posisi tubuh seimbang di atas papan busa (softboard), teknik mendayung yang efisien, serta berdiri (pop-up) di atas ombak putih (whitewater) yang tenang.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 mb-8">
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Materi yang Dipelajari:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Membaca pasang surut & zona aman pantai</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Teknik dayungan efisien & posisi dada</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Metode 3-langkah pop-up stabil</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Cara jatuh dengan aman (wipeout safety)</span></li>
+                  </ul>
+                </div>
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Fasilitas yang Termasuk:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Soft-top surfboard aman 8'0" – 9'0"</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Rashguard pelindung matahari & lecet</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Mineral zinc sunscreen tahan air</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Kelapa muda segar pasca sesi</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-[11px] text-deep-tide/60 block">Format & Rasio Pelatih:</span>
+                <span class="font-serif font-bold text-base text-deep-tide">Maksimal 2 Siswa : 1 Instruktur</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20ketersediaan%20sesi%20Beginner%20Surf%20Lesson."
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-surf-coral hover:bg-surf-coral/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all">
+                <span>Tanya Ketersediaan Sesi Pemula</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 2: Private 1-on-1 Coaching -->
+        <article id="private" class="bg-white rounded-2xl border-2 border-deep-tide/25 shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-5 relative min-h-[300px]">
+            <img src="./assets/images/lesson_private.jpg" 
+                 alt="Instruktur membimbing satu siswa secara personal di ombak laut" 
+                 class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            <span class="absolute top-4 left-4 bg-deep-tide text-salt-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow">
+              Intensif &bull; 1-on-1 Private
+            </span>
+          </div>
+          <div class="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-widest text-surf-coral font-semibold">Perhatian Penuh & Akselerasi Belajar</span>
+                <span class="text-xs text-deep-tide/60 bg-sea-glass/40 px-3 py-1 rounded-full">Durasi: 2 Jam Fleksibel</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide font-bold mb-4">Private 1-on-1 Surf Coaching</h2>
+              <p class="text-sm text-deep-tide/80 leading-relaxed mb-6">
+                Dirancang khusus bagi Anda yang ingin progres lebih cepat atau memiliki kekhawatiran spesifik tentang kedalaman air. Instruktur senior kami mendedikasikan 100% perhatian mereka hanya untuk Anda, menganalisis biomekanik gerak secara mendalam dan mendampingi di setiap ayunan ombak.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 mb-8">
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Keunggulan Sesi Privat:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Kurikulum disesuaikan dengan stamina & fleksibilitas Anda</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Penyesuaian waktu sesi mengikuti jam pasang terbaik</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Pendampingan psikologis bagi yang cemas di air</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Analisis foto / video gerakan pasca sesi</span></li>
+                  </ul>
+                </div>
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Fasilitas Termasuk:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Pilihan papan sesuai tinggi & berat badan</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Dokumentasi foto aksi di ombak</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Handuk bersih & shower air tawar</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Konsultasi perkembangan lanjutan</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-[11px] text-deep-tide/60 block">Rasio Eksklusif:</span>
+                <span class="font-serif font-bold text-base text-deep-tide">1 Siswa : 1 Instruktur Senior</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20tertarik%20dengan%20Private%201-on-1%20Surf%20Coaching.%20Boleh%20tahu%20ketersediaan%20jadwalnya%3F"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all">
+                <span>Konsultasi Sesi Privat via WhatsApp</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 3: Group & Family Surf Lesson -->
+        <article id="group" class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-5 relative min-h-[300px]">
+            <img src="./assets/images/lesson_group.jpg" 
+                 alt="Kelompok sahabat dan keluarga belajar selancar bersama instruktur" 
+                 class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            <span class="absolute top-4 left-4 bg-salt-white text-deep-tide text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow">
+              Rombongan & Keluarga
+            </span>
+          </div>
+          <div class="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-widest text-surf-coral font-semibold">Kebersamaan & Ceria</span>
+                <span class="text-xs text-deep-tide/60 bg-sea-glass/40 px-3 py-1 rounded-full">Durasi: 2–2.5 Jam</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide font-bold mb-4">Group & Family Surf Session</h2>
+              <p class="text-sm text-deep-tide/80 leading-relaxed mb-6">
+                Aktivitas pantai yang sangat menyenangkan untuk dilakukan bersama keluarga, anak-anak, atau grup sahabat. Menikmati ombak bersama, saling menyemangati, dan tertawa lepas di air tenang Batu Karas dengan penjagaan instruktur yang selalu siaga.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 mb-8">
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Karakter Program:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Suasana belajar santai dan menyenangkan</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Ramah untuk anak-anak (usia mulai 7 tahun)</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Peralatan disesuaikan untuk masing-masing peserta</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Briefing khusus pendampingan anak di air</span></li>
+                  </ul>
+                </div>
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Termasuk:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Papan selancar untuk masing-masing peserta</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Rashguards berbagai ukuran dewasa & anak</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Foto kelompok kenang-kenangan</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Kelapa muda & camilan buah tropis</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-[11px] text-deep-tide/60 block">Ketentuan Rombongan:</span>
+                <span class="font-serif font-bold text-base text-deep-tide">3–6 Orang (1 Instruktur per 3 Siswa)</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20kami%20berencana%20datang%20rombongan%2Fkeluarga.%20Boleh%20tahu%20ketersediaan%20sesi%20Group%20Surf%3F"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-sea-glass/80 hover:bg-sea-glass text-deep-tide font-semibold text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all">
+                <span>Tanya Sesi Rombongan via WhatsApp</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 4: Intermediate Surf Coaching -->
+        <article id="intermediate" class="bg-white rounded-2xl border border-deep-tide/15 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-5 relative min-h-[300px]">
+            <img src="./assets/images/lesson_intermediate.jpg" 
+                 alt="Peselancar tingkat menengah meluncur di dinding ombak hijau" 
+                 class="w-full h-full object-cover" loading="lazy" width="600" height="400">
+            <span class="absolute top-4 left-4 bg-salt-white text-deep-tide text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow">
+              Level 2 &bull; Intermediate
+            </span>
+          </div>
+          <div class="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs uppercase tracking-widest text-surf-coral font-semibold">Green Waves & Lineup Positioning</span>
+                <span class="text-xs text-deep-tide/60 bg-sea-glass/40 px-3 py-1 rounded-full">Durasi: 2.5 Jam</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide font-bold mb-4">Intermediate Surf Coaching</h2>
+              <p class="text-sm text-deep-tide/80 leading-relaxed mb-6">
+                Untuk peselancar yang sudah mampu berdiri di ombak busa dan ingin beralih menunggangi ombak hijau (unbroken waves). Fokus pada posisi duduk di lineup, pemilihan set ombak terbaik (wave selection), angling takeoff, dan teknik trimming di dinding ombak.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-deep-tide/85 mb-8">
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Kurikulum Lanjutan:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Navigasi lineup & membaca periode gelombang</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Angled takeoff agar tidak tersangkut di bibir ombak</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Trimming, menjaga kecepatan (speed generation)</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Etika giliran ombak di spot yang ramai</span></li>
+                  </ul>
+                </div>
+                <div class="space-y-2">
+                  <div class="font-semibold text-deep-tide">Pilihan Peralatan:</div>
+                  <ul class="space-y-1.5 text-deep-tide/75">
+                    <li class="flex items-start gap-1.5">&bull; <span>Hardtop Longboard single-fin klasik (9'2" – 9'6")</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Mid-length atau funboard (7'2" – 8'0")</span></li>
+                    <li class="flex items-start gap-1.5">&bull; <span>Video review pergerakan di tepi pantai</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-deep-tide/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-[11px] text-deep-tide/60 block">Target Peserta:</span>
+                <span class="font-serif font-bold text-base text-deep-tide">Mampu Mendayung Mandiri & Berenang</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20konsultasi%20mengenai%20Intermediate%20Surf%20Coaching%20di%20Batu%20Karas."
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all">
+                <span>Tanya Program Intermediate</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Equipment & Safety Integrity Section -->
+    <section class="py-20 bg-warm-sand/25 border-y border-deep-tide/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5">
+            <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Standar Peralatan</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide mb-4">
+              Peralatan Terbaik untuk Kenyamanan & Keamanan.
+            </h2>
+            <p class="text-sm text-deep-tide/80 leading-relaxed mb-6">
+              Keberhasilan belajar surfing sangat dipengaruhi oleh volume dan stabilitas papan selancar. Kami merawat dan memperbarui armada papan selancar kami secara berkala agar Anda mendapatkan daya apung maksimal tanpa rasa khawatir terbentur.
+            </p>
+            <div class="space-y-3 text-xs text-deep-tide/80">
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 rounded-full bg-surf-coral"></span>
+                <span>Papan Soft-top berbusa padat dengan sirip tumpul ramah pemula</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 rounded-full bg-surf-coral"></span>
+                <span>Tali pengikat kaki (leash) berkekuatan tinggi diperiksa setiap hari</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 rounded-full bg-surf-coral"></span>
+                <span>Bahan lilin selancar lebah alami ramah terumbu karang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-salt-white p-6 rounded-xl border border-deep-tide/10">
+                <span class="font-serif text-lg font-bold text-deep-tide block mb-2">Soft-top Foamies (8'0" &bull; 9'0")</span>
+                <p class="text-xs text-deep-tide/75 leading-relaxed">
+                  Papan berdaya apung tinggi (volume 85–98 liter) yang memudahkan kayuhan dan sangat stabil saat berdiri di ombak busa.
+                </p>
+              </div>
+              <div class="bg-salt-white p-6 rounded-xl border border-deep-tide/10">
+                <span class="font-serif text-lg font-bold text-deep-tide block mb-2">Classic Epoxy Malibus (9'2")</span>
+                <p class="text-xs text-deep-tide/75 leading-relaxed">
+                  Papan longboard klasik untuk siswa menengah yang ingin merasakan kelenturan papan fiberglass dan aliran ombak yang panjang.
+                </p>
+              </div>
+              <div class="bg-salt-white p-6 rounded-xl border border-deep-tide/10">
+                <span class="font-serif text-lg font-bold text-deep-tide block mb-2">Rashguards & Sun Protection</span>
+                <p class="text-xs text-deep-tide/75 leading-relaxed">
+                  Pakaian renang pelindung UV 50+ dicuci bersih setiap selesai digunakan dengan deterjen alami yang lembut di kulit sensitif.
+                </p>
+              </div>
+              <div class="bg-salt-white p-6 rounded-xl border border-deep-tide/10">
+                <span class="font-serif text-lg font-bold text-deep-tide block mb-2">Kotak Medis & P3K Standar</span>
+                <p class="text-xs text-deep-tide/75 leading-relaxed">
+                  Tersedia di pondok pantai kami, siap sedia menangani luka lecet atau sengatan ubur-ubur musiman secara medis dan tanggap.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Pertanyaan Umum</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide mb-4">Hal yang Sering Ditanyakan Calon Siswa</h2>
+          <p class="text-sm text-deep-tide/75">Semua yang perlu Anda ketahui sebelum melangkahkan kaki pertama ke pantai.</p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="border border-deep-tide/15 rounded-xl bg-white overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between font-serif text-base font-bold text-deep-tide focus:outline-none" aria-expanded="false" aria-controls="faq-ans-1">
+              <span>Apakah saya harus bisa berenang lancar untuk mengikuti kelas pemula?</span>
+              <svg class="faq-icon w-5 h-5 text-deep-tide/60 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-1" class="hidden px-5 pb-5 text-xs text-deep-tide/80 leading-relaxed border-t border-deep-tide/10 pt-3">
+              Tidak harus berenang seperti atlet. Sesi pemula dilakukan di perairan dangkal setinggi dada atau pinggang dengan dasar pasir landai tanpa palung. Papan selancar Anda juga memiliki daya apung tinggi dan terhubung ke pergelangan kaki dengan tali pengaman. Selain itu, instruktur selalu berada tepat di samping Anda di dalam air.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-deep-tide/15 rounded-xl bg-white overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between font-serif text-base font-bold text-deep-tide focus:outline-none" aria-expanded="false" aria-controls="faq-ans-2">
+              <span>Apa yang perlu saya bawa dan kenakan saat sesi?</span>
+              <svg class="faq-icon w-5 h-5 text-deep-tide/60 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-2" class="hidden px-5 pb-5 text-xs text-deep-tide/80 leading-relaxed border-t border-deep-tide/10 pt-3">
+              Cukup bawa pakaian renang yang nyaman (boardshorts atau baju renang), pakaian ganti kering, dan handuk. Kami sudah menyediakan papan selancar, tali leash, rashguard UV, serta zinc sunscreen ramah lingkungan.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-deep-tide/15 rounded-xl bg-white overflow-hidden">
+            <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between font-serif text-base font-bold text-deep-tide focus:outline-none" aria-expanded="false" aria-controls="faq-ans-3">
+              <span>Kapan waktu terbaik untuk mengambil sesi pelajaran?</span>
+              <svg class="faq-icon w-5 h-5 text-deep-tide/60 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-3" class="hidden px-5 pb-5 text-xs text-deep-tide/80 leading-relaxed border-t border-deep-tide/10 pt-3">
+              Kondisi terbaik adalah saat air bergerak pasang (mid to high tide) di pagi hari sekitar pukul 06:30 – 09:30 WIB ketika angin masih tenang (glassy). Sesi sore hari menjelang matahari terbenam (16:00 – 17:45 WIB) juga sangat populer dengan pencahayaan keemasan yang menawan.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="py-16 bg-deep-tide text-salt-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-4">
+          Punya Pertanyaan Khusus Mengenai Program Belajar?
+        </h2>
+        <p class="text-sm text-salt-white/80 max-w-lg mx-auto mb-8 font-light">
+          Hubungi kami melalui WhatsApp untuk berkonsultasi mengenai kondisi ombak harian dan memilih program yang paling cocok untuk Anda.
+        </p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20konsultasi%20mengenai%20jadwal%20dan%20program%20lesson."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-surf-coral hover:bg-surf-coral/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-8 py-3.5 rounded-full shadow-lg transition-all">
+          <span>Konsultasi Program via WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-deep-tide text-salt-white border-t border-salt-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-salt-white/10">
+        
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <span class="font-serif text-2xl font-bold tracking-tight mb-2">KALA SURF CO.</span>
+          <p class="text-xs uppercase tracking-widest text-ocean-mist mb-4">Batu Karas &bull; Est. 2018</p>
+          <p class="text-xs text-salt-white/70 leading-relaxed mb-6 max-w-sm">
+            Sekolah surfing berorientasi pada keselamatan, etika laut, dan pelestarian komunitas pesisir di teluk ombak Batu Karas, Jawa Barat.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-salt-white/80">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Musim Ombak Terbaik: Sepanjang Tahun</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Navigasi</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="index.html" class="hover:text-surf-coral transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-surf-coral transition-colors">Tentang Kami</a></li>
+            <li><a href="lessons.html" class="hover:text-surf-coral transition-colors">Program Lesson</a></li>
+            <li><a href="instructors.html" class="hover:text-surf-coral transition-colors">Instruktur</a></li>
+            <li><a href="gallery.html" class="hover:text-surf-coral transition-colors">Galeri Dokumentasi</a></li>
+            <li><a href="contact.html" class="hover:text-surf-coral transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Pilihan Lesson</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="lessons.html#beginner" class="hover:text-surf-coral transition-colors">Beginner Surf Lesson</a></li>
+            <li><a href="lessons.html#private" class="hover:text-surf-coral transition-colors">Private 1-on-1 Coaching</a></li>
+            <li><a href="lessons.html#group" class="hover:text-surf-coral transition-colors">Group & Friends Session</a></li>
+            <li><a href="lessons.html#intermediate" class="hover:text-surf-coral transition-colors">Intermediate Wave Reading</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Titik Sekolah & Hubungi</h4>
+          <address class="not-italic text-xs text-salt-white/75 space-y-2.5">
+            <p>Jl. Pantai Batu Karas No. 14, Desa Batukaras, Cijulang, Pangandaran, Jawa Barat 46394</p>
+            <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-surf-coral font-medium hover:underline">+62 812-3456-7890</a></p>
+            <p>Email: <a href="mailto:hello@kalasurfco.com" class="hover:underline">hello@kalasurfco.com</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-salt-white/60">
+        <p>&copy; 2026 Kala Surf Co. Seluruh hak cipta dilindungi.</p>
+        <p class="text-[11px] text-salt-white/50">
+          Batu Karas, Pangandaran, Jawa Barat &bull; Authentic Surf Sanctuary
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surf Gallery & Experiences | Kala Surf Co. Batu Karas</title>
+  <meta name="description" content="Dokumentasi visual otentik suasana belajar selancar, ombak teluk, dan kehidupan pantai komunitas Kala Surf Co. di Batu Karas, Jawa Barat.">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-salt-white text-deep-tide selection:bg-surf-coral selection:text-salt-white min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 bg-salt-white/95 backdrop-blur border-b border-deep-tide/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Wordmark -->
+      <a href="index.html" class="group flex flex-col focus:outline-none" aria-label="Kala Surf Co. Home">
+        <span class="font-serif text-2xl font-bold tracking-tight text-deep-tide group-hover:text-surf-coral transition-colors duration-200">
+          KALA SURF CO.
+        </span>
+        <span class="text-[11px] uppercase tracking-widest text-deep-tide/60 font-medium">
+          Batu Karas &bull; West Java
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Main Navigation">
+        <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Home</a>
+        <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">About</a>
+        <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Lessons</a>
+        <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Instructors</a>
+        <a href="gallery.html" class="text-surf-coral font-semibold relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-surf-coral">Gallery</a>
+        <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20setelah%20melihat%20galeri%20sesi%20surfing%2C%20saya%20tertarik%20untuk%20mengikuti%20sesi%20lesson."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+          <svg class="w-4 h-4 text-surf-coral fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.561 3.78 1.533 5.328L2.086 21.914l4.721-1.428A10.015 10.015 0 0 0 12.031 22C17.566 22 22 17.535 22 12.031 22 6.496 17.566 2 12.031 2zm0 18.25c-1.635 0-3.15-.461-4.444-1.258l-.318-.195-2.806.849.865-2.736-.208-.332A8.22 8.22 0 0 1 3.781 12.03c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25zm4.516-6.177c-.247-.123-1.464-.722-1.691-.804-.227-.082-.392-.123-.558.123-.165.247-.64 0.804-.784.969-.144.165-.288.185-.535.062-.247-.123-1.043-.385-1.986-1.226-.734-.655-1.23-1.464-1.374-1.711-.144-.247-.015-.381.108-.504.111-.111.247-.288.371-.432.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.432-.062-.123-.558-1.343-.764-1.84-.201-.484-.405-.418-.558-.426l-.474-.008c-.165 0-.432.062-.658.309-.227.247-.866.845-.866 2.062 0 1.217.887 2.392 1.011 2.557.124.165 1.745 2.665 4.228 3.738.591.255 1.053.407 1.413.521.593.189 1.134.162 1.561.098.476-.071 1.464-.598 1.67-1.175.206-.577.206-1.072.144-1.175-.062-.103-.227-.165-.474-.288z"/>
+          </svg>
+          <span>Tanya Sesi</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka Menu Navigasi"
+              class="md:hidden p-2 rounded-lg text-deep-tide hover:bg-warm-sand/30 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-deep-tide/10 bg-salt-white px-6 py-5 flex flex-col gap-4 text-base font-medium" aria-label="Mobile Navigation">
+      <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Home</a>
+      <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide py-1">About Us</a>
+      <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Lessons & Programs</a>
+      <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Instructors</a>
+      <a href="gallery.html" class="text-surf-coral font-semibold">Gallery</a>
+      <a href="contact.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Contact & Location</a>
+      <div class="pt-3 border-t border-deep-tide/10">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20tertarik%20mengikuti%20sesi%20surfing%20setelah%20melihat%20galeri."
+           target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center gap-2 bg-surf-coral text-salt-white py-3 rounded-xl font-semibold shadow text-sm">
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    
+    <!-- Header Section -->
+    <section class="py-16 md:py-24 border-b border-deep-tide/10 bg-warm-sand/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-3">Galeri Fotografi Pesisir</span>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-deep-tide leading-tight mb-6">
+            Momen Nyata dari Tepian Samudra Batu Karas.
+          </h1>
+          <p class="text-lg text-deep-tide/80 leading-relaxed font-light">
+            Rekaman visual perjalanan para peselancar: mulai dari tawa gugup di bibir pantai, kayuhan pertama menyambut ombak, hingga momen tenang saat matahari tenggelam di teluk.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Tabs & Gallery Grid -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-12" role="tablist" aria-label="Kategori Galeri">
+          <button type="button" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-deep-tide text-salt-white transition-all whitespace-nowrap" data-category="all" aria-pressed="true">
+            Semua Foto
+          </button>
+          <button type="button" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-deep-tide border border-deep-tide/10 hover:bg-warm-sand/30 transition-all whitespace-nowrap" data-category="sessions" aria-pressed="false">
+            Sesi Ombak
+          </button>
+          <button type="button" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-deep-tide border border-deep-tide/10 hover:bg-warm-sand/30 transition-all whitespace-nowrap" data-category="instructors" aria-pressed="false">
+            Instruktur & Pembelajaran
+          </button>
+          <button type="button" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-deep-tide border border-deep-tide/10 hover:bg-warm-sand/30 transition-all whitespace-nowrap" data-category="ocean" aria-pressed="false">
+            Pantai & Peralatan
+          </button>
+        </div>
+
+        <!-- Asymmetric Editorial Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+          
+          <!-- Item 1: Hero Surf Action -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="sessions">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/hero_surf.jpg" 
+                   alt="Peselancar meluncur di atas gelombang ombak kanan Batu Karas" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Sunrise Point Glide</span>
+                <span class="text-[11px] text-deep-tide/60">Batu Karas Point &bull; 06:15 WIB</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-surf-coral bg-warm-sand/30 px-2.5 py-1 rounded-full">Sesi Ombak</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Instructor Guidance -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="instructors">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/lesson_private.jpg" 
+                 alt="Instruktur memberikan petunjuk arah kayuhan di tengah laut dangkal" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Pendampingan Dekat</span>
+                <span class="text-[11px] text-deep-tide/60">Koreksi teknik posisi dada</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-deep-tide/80 bg-sea-glass/40 px-2.5 py-1 rounded-full">Instruktur</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Surfboards & Handcraft -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="ocean">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/gallery_boards.jpg" 
+                 alt="Deretan papan selancar klasik dengan fin kayu di pesisir pantai" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Armada Papan Terawat</span>
+                <span class="text-[11px] text-deep-tide/60">Kayu balsa & epoxy ramah lingkungan</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-ocean-mist text-deep-tide/70 bg-warm-sand/30 px-2.5 py-1 rounded-full">Peralatan</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Lineup Waves -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="sessions">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/gallery_lineup.jpg" 
+                 alt="Gulungan ombak tenang di garis pantai Batu Karas saat cuaca cerah" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Lineup Khas Pesisir</span>
+                <span class="text-[11px] text-deep-tide/60">Batu Karas right-hander peel</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-surf-coral bg-warm-sand/30 px-2.5 py-1 rounded-full">Sesi Ombak</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Surf Shack Vibe -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="ocean">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/about_story.jpg" 
+                 alt="Suasana beranda kayu pondok selancar di bawah pohon kelapa" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Pondok Pantai Kami</span>
+                <span class="text-[11px] text-deep-tide/60">Titik kumpul & briefing darat</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-deep-tide/80 bg-sea-glass/40 px-2.5 py-1 rounded-full">Pantai</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Sunset Moment -->
+          <div class="gallery-item rounded-xl overflow-hidden bg-white border border-deep-tide/10 shadow-sm transition-all duration-300 group" data-category="sessions">
+            <div class="h-72 overflow-hidden">
+              <img src="./assets/images/gallery_sunset.jpg" 
+                 alt="Matahari terbenam bernuansa hangat di atas horizon samudra" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="600" height="288">
+            </div>
+            <div class="p-4 bg-white border-t border-deep-tide/5 flex items-center justify-between">
+              <div>
+                <span class="font-serif text-sm font-bold text-deep-tide block">Golden Hour Reflection</span>
+                <span class="text-[11px] text-deep-tide/60">Sesi sore penutup hari</span>
+              </div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-surf-coral bg-warm-sand/30 px-2.5 py-1 rounded-full">Sesi Ombak</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Conversion Banner -->
+    <section class="py-16 bg-deep-tide text-salt-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal mb-4">
+          Ingin Mengabadikan Ombak Pertama Anda?
+        </h2>
+        <p class="text-sm text-salt-white/80 max-w-lg mx-auto mb-8 font-light">
+          Setiap paket sesi privat kami sudah dilengkapi dokumentasi foto resolusi tinggi dari bibir pantai oleh fotografer lokal kami.
+        </p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20tertarik%20dengan%20sesi%20surfing%20beserta%20paket%20dokumentasi%20foto."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-surf-coral hover:bg-surf-coral/90 text-salt-white font-semibold text-xs uppercase tracking-wider px-8 py-3.5 rounded-full shadow-lg transition-all">
+          <span>Tanya Paket Dokumentasi via WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-deep-tide text-salt-white border-t border-salt-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-salt-white/10">
+        
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <span class="font-serif text-2xl font-bold tracking-tight mb-2">KALA SURF CO.</span>
+          <p class="text-xs uppercase tracking-widest text-ocean-mist mb-4">Batu Karas &bull; Est. 2018</p>
+          <p class="text-xs text-salt-white/70 leading-relaxed mb-6 max-w-sm">
+            Sekolah surfing berorientasi pada keselamatan, etika laut, dan pelestarian komunitas pesisir di teluk ombak Batu Karas, Jawa Barat.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-salt-white/80">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Musim Ombak Terbaik: Sepanjang Tahun</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Navigasi</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="index.html" class="hover:text-surf-coral transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-surf-coral transition-colors">Tentang Kami</a></li>
+            <li><a href="lessons.html" class="hover:text-surf-coral transition-colors">Program Lesson</a></li>
+            <li><a href="instructors.html" class="hover:text-surf-coral transition-colors">Instruktur</a></li>
+            <li><a href="gallery.html" class="hover:text-surf-coral transition-colors">Galeri Dokumentasi</a></li>
+            <li><a href="contact.html" class="hover:text-surf-coral transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Pilihan Lesson</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="lessons.html#beginner" class="hover:text-surf-coral transition-colors">Beginner Surf Lesson</a></li>
+            <li><a href="lessons.html#private" class="hover:text-surf-coral transition-colors">Private 1-on-1 Coaching</a></li>
+            <li><a href="lessons.html#group" class="hover:text-surf-coral transition-colors">Group & Friends Session</a></li>
+            <li><a href="lessons.html#intermediate" class="hover:text-surf-coral transition-colors">Intermediate Wave Reading</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Titik Sekolah & Hubungi</h4>
+          <address class="not-italic text-xs text-salt-white/75 space-y-2.5">
+            <p>Jl. Pantai Batu Karas No. 14, Desa Batukaras, Cijulang, Pangandaran, Jawa Barat 46394</p>
+            <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-surf-coral font-medium hover:underline">+62 812-3456-7890</a></p>
+            <p>Email: <a href="mailto:hello@kalasurfco.com" class="hover:underline">hello@kalasurfco.com</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-salt-white/60">
+        <p>&copy; 2026 Kala Surf Co. Seluruh hak cipta dilindungi.</p>
+        <p class="text-[11px] text-salt-white/50">
+          Batu Karas, Pangandaran, Jawa Barat &bull; Authentic Surf Sanctuary
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

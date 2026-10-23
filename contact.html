@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Location | Kala Surf Co. Batu Karas</title>
+  <meta name="description"
+    content="Temukan lokasi Kala Surf Co. di Pantai Batu Karas, Pangandaran. Kontak WhatsApp resmi, rute transportasi, jam operasional, dan panduan pasang surut ombak.">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body
+  class="bg-salt-white text-deep-tide selection:bg-surf-coral selection:text-salt-white min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 bg-salt-white/95 backdrop-blur border-b border-deep-tide/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Wordmark -->
+      <a href="index.html" class="group flex flex-col focus:outline-none" aria-label="Kala Surf Co. Home">
+        <span
+          class="font-serif text-2xl font-bold tracking-tight text-deep-tide group-hover:text-surf-coral transition-colors duration-200">
+          KALA SURF CO.
+        </span>
+        <span class="text-[11px] uppercase tracking-widest text-deep-tide/60 font-medium">
+          Batu Karas &bull; West Java
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Main Navigation">
+        <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Home</a>
+        <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">About</a>
+        <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Lessons</a>
+        <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Instructors</a>
+        <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide transition-colors py-1">Gallery</a>
+        <a href="contact.html"
+          class="text-surf-coral font-semibold relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-surf-coral">Contact</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20jadwal%20ketersediaan%20sesi%20surfing%20di%20Batu%20Karas."
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-deep-tide hover:bg-deep-tide/90 text-salt-white text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+          <svg class="w-4 h-4 text-surf-coral fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.561 3.78 1.533 5.328L2.086 21.914l4.721-1.428A10.015 10.015 0 0 0 12.031 22C17.566 22 22 17.535 22 12.031 22 6.496 17.566 2 12.031 2zm0 18.25c-1.635 0-3.15-.461-4.444-1.258l-.318-.195-2.806.849.865-2.736-.208-.332A8.22 8.22 0 0 1 3.781 12.03c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25zm4.516-6.177c-.247-.123-1.464-.722-1.691-.804-.227-.082-.392-.123-.558.123-.165.247-.64 0.804-.784.969-.144.165-.288.185-.535.062-.247-.123-1.043-.385-1.986-1.226-.734-.655-1.23-1.464-1.374-1.711-.144-.247-.015-.381.108-.504.111-.111.247-.288.371-.432.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.432-.062-.123-.558-1.343-.764-1.84-.201-.484-.405-.418-.558-.426l-.474-.008c-.165 0-.432.062-.658.309-.227.247-.866.845-.866 2.062 0 1.217.887 2.392 1.011 2.557.124.165 1.745 2.665 4.228 3.738.591.255 1.053.407 1.413.521.593.189 1.134.162 1.561.098.476-.071 1.464-.598 1.67-1.175.206-.577.206-1.072.144-1.175-.062-.103-.227-.165-.474-.288z" />
+          </svg>
+          <span>Tanya Sesi</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+        aria-label="Buka Menu Navigasi"
+        class="md:hidden p-2 rounded-lg text-deep-tide hover:bg-warm-sand/30 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu"
+      class="hidden md:hidden border-t border-deep-tide/10 bg-salt-white px-6 py-5 flex flex-col gap-4 text-base font-medium"
+      aria-label="Mobile Navigation">
+      <a href="index.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Home</a>
+      <a href="about.html" class="text-deep-tide/80 hover:text-deep-tide py-1">About Us</a>
+      <a href="lessons.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Lessons & Programs</a>
+      <a href="instructors.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Instructors</a>
+      <a href="gallery.html" class="text-deep-tide/80 hover:text-deep-tide py-1">Gallery</a>
+      <a href="contact.html" class="text-surf-coral font-semibold">Contact & Location</a>
+      <div class="pt-3 border-t border-deep-tide/10">
+        <a href="https://wa.me/6281234567890?text=Halo%20Kala%20Surf%20Co.%2C%20saya%20ingin%20menanyakan%20jadwal%20ketersediaan%20sesi%20surfing."
+          target="_blank" rel="noopener noreferrer"
+          class="w-full flex items-center justify-center gap-2 bg-surf-coral text-salt-white py-3 rounded-xl font-semibold shadow text-sm">
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- Header Section -->
+    <section class="py-16 md:py-24 border-b border-deep-tide/10 bg-warm-sand/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-3">Kontak & Lokasi
+            Pesisir</span>
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-deep-tide leading-tight mb-6">
+            Temukan Pondok Kami di Tepi Teluk Batu Karas.
+          </h1>
+          <p class="text-lg text-deep-tide/80 leading-relaxed font-light">
+            Kami siap menyambut Anda. Jangan ragu menghubungi kami melalui WhatsApp untuk menanyakan prediksi pasang
+            surut, petunjuk arah jalan, atau sekadar berbincang tentang kondisi ombak hari ini.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Information Grid -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+          <!-- Direct Business Details -->
+          <div class="lg:col-span-5 space-y-8">
+            <div>
+              <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Informasi
+                Resmi</span>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide mb-4">Pondok & Operasional Sekolah</h2>
+              <p class="text-sm text-deep-tide/80 leading-relaxed">
+                Pondok selancar kami berjarak hanya 30 langkah dari bibir pantai teluk Legok Pari. Siswa dapat bersantai
+                di beranda kami sebelum dan sesudah sesi air.
+              </p>
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <div class="p-5 rounded-xl bg-white border border-deep-tide/10 shadow-sm flex items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-sea-glass/50 flex items-center justify-center flex-shrink-0 text-deep-tide">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="font-serif font-bold text-deep-tide block text-base mb-1">Alamat Titik Sekolah</span>
+                  <address class="not-italic text-xs text-deep-tide/75 leading-relaxed">
+                    Jl. Pantai Batu Karas No. 14, Dusun Sanghiangkalang, Desa Batukaras, Kec. Cijulang, Kab.
+                    Pangandaran, Jawa Barat 46394
+                  </address>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-xl bg-white border border-deep-tide/10 shadow-sm flex items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-sea-glass/50 flex items-center justify-center flex-shrink-0 text-deep-tide">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="font-serif font-bold text-deep-tide block text-base mb-1">WhatsApp & Telepon</span>
+                  <p class="text-xs text-deep-tide/75 mb-1">Respon cepat setiap hari 06:00 – 20:00 WIB</p>
+                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-bold text-surf-coral hover:underline">
+                    +62 812-3456-7890 (WhatsApp Resmi)
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-xl bg-white border border-deep-tide/10 shadow-sm flex items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-sea-glass/50 flex items-center justify-center flex-shrink-0 text-deep-tide">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="font-serif font-bold text-deep-tide block text-base mb-1">Surat Elektronik</span>
+                  <p class="text-xs text-deep-tide/75">Untuk pertanyaan korporat, retret tim, atau media</p>
+                  <a href="mailto:hello@kalasurfco.com"
+                    class="text-xs font-semibold text-deep-tide hover:text-surf-coral">
+                    hello@kalasurfco.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-xl bg-white border border-deep-tide/10 shadow-sm flex items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-sea-glass/50 flex items-center justify-center flex-shrink-0 text-deep-tide">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="font-serif font-bold text-deep-tide block text-base mb-1">Jam Operasional Air</span>
+                  <p class="text-xs text-deep-tide/75">Buka setiap hari: 06:00 – 18:00 WIB</p>
+                  <span class="text-[11px] text-surf-coral font-medium">Sesi disesuaikan dengan siklus pasang surut
+                    harian.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Functional WhatsApp Inquiry Builder -->
+          <div class="lg:col-span-7">
+            <div class="bg-white p-8 sm:p-10 rounded-2xl border border-deep-tide/15 shadow-md">
+              <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Konsultasi
+                Terpandu</span>
+              <h2 class="font-serif text-2xl sm:text-3xl text-deep-tide font-bold mb-3">Kirim Pertanyaan Langsung ke
+                WhatsApp</h2>
+              <p class="text-xs text-deep-tide/75 leading-relaxed mb-6">
+                Pilih preferensi Anda di bawah. Tombol akan secara otomatis menyusun pesan siap kirim dan membuka
+                obrolan langsung dengan tim Kala Surf Co.
+              </p>
+
+              <form id="whatsapp-inquiry-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="inquiry-name" class="block text-xs font-semibold text-deep-tide mb-1">Nama Anda
+                      *</label>
+                    <input type="text" id="inquiry-name" required placeholder="Contoh: Rian Pratama"
+                      class="w-full px-4 py-2.5 rounded-lg border border-deep-tide/20 text-xs focus:outline-none focus:border-surf-coral bg-salt-white/50">
+                  </div>
+                  <div>
+                    <label for="inquiry-lesson" class="block text-xs font-semibold text-deep-tide mb-1">Pilihan Program
+                      *</label>
+                    <select id="inquiry-lesson"
+                      class="w-full px-4 py-2.5 rounded-lg border border-deep-tide/20 text-xs focus:outline-none focus:border-surf-coral bg-salt-white/50">
+                      <option value="Beginner Surf Lesson">Beginner Surf Lesson (Pemula)</option>
+                      <option value="Private 1-on-1 Coaching">Private 1-on-1 Coaching (Intensif)</option>
+                      <option value="Group & Family Surf Session">Group & Family Session (Rombongan)</option>
+                      <option value="Intermediate Surf Coaching">Intermediate Coaching (Green Waves)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="inquiry-participants" class="block text-xs font-semibold text-deep-tide mb-1">Jumlah
+                      Peserta</label>
+                    <select id="inquiry-participants"
+                      class="w-full px-4 py-2.5 rounded-lg border border-deep-tide/20 text-xs focus:outline-none focus:border-surf-coral bg-salt-white/50">
+                      <option value="1">1 Orang</option>
+                      <option value="2">2 Orang</option>
+                      <option value="3-4">3 – 4 Orang</option>
+                      <option value="5+">Lebih dari 5 Orang</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="inquiry-date" class="block text-xs font-semibold text-deep-tide mb-1">Perkiraan Tanggal
+                      Kedatangan</label>
+                    <input type="text" id="inquiry-date" placeholder="Contoh: Akhir pekan depan / 15 Mei"
+                      class="w-full px-4 py-2.5 rounded-lg border border-deep-tide/20 text-xs focus:outline-none focus:border-surf-coral bg-salt-white/50">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="inquiry-note" class="block text-xs font-semibold text-deep-tide mb-1">Catatan Tambahan
+                    (Pengalaman berenang, kondisi kesehatan, dll.)</label>
+                  <textarea id="inquiry-note" rows="3"
+                    placeholder="Ceritakan apakah Anda pernah berselancar sebelumnya atau ada hal yang ingin ditanyakan khusus..."
+                    class="w-full px-4 py-2.5 rounded-lg border border-deep-tide/20 text-xs focus:outline-none focus:border-surf-coral bg-salt-white/50"></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button type="submit"
+                    class="w-full flex items-center justify-center gap-2 bg-surf-coral hover:bg-surf-coral/90 text-salt-white py-3.5 px-6 rounded-xl font-semibold text-xs uppercase tracking-wider shadow transition-all duration-200">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.561 3.78 1.533 5.328L2.086 21.914l4.721-1.428A10.015 10.015 0 0 0 12.031 22C17.566 22 22 17.535 22 12.031 22 6.496 17.566 2 12.031 2zm0 18.25c-1.635 0-3.15-.461-4.444-1.258l-.318-.195-2.806.849.865-2.736-.208-.332A8.22 8.22 0 0 1 3.781 12.03c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25zm4.516-6.177c-.247-.123-1.464-.722-1.691-.804-.227-.082-.392-.123-.558.123-.165.247-.64 0.804-.784.969-.144.165-.288.185-.535.062-.247-.123-1.043-.385-1.986-1.226-.734-.655-1.23-1.464-1.374-1.711-.144-.247-.015-.381.108-.504.111-.111.247-.288.371-.432.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.432-.062-.123-.558-1.343-.764-1.84-.201-.484-.405-.418-.558-.426l-.474-.008c-.165 0-.432.062-.658.309-.227.247-.866.845-.866 2.062 0 1.217.887 2.392 1.011 2.557.124.165 1.745 2.665 4.228 3.738.591.255 1.053.407 1.413.521.593.189 1.134.162 1.561.098.476-.071 1.464-.598 1.67-1.175.206-.577.206-1.072.144-1.175-.062-.103-.227-.165-.474-.288z" />
+                    </svg>
+                    <span>Lanjutkan Pembicaraan ke WhatsApp</span>
+                  </button>
+                  <p class="text-[11px] text-deep-tide/60 text-center mt-2">
+                    Mekanisme resmi: Form ini langsung membuka aplikasi WhatsApp di gawai Anda dengan pesan rapi tanpa
+                    menyimpan data pribadi di server.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guide & How to Reach Us -->
+    <section class="py-20 bg-sea-glass/25 border-t border-deep-tide/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-semibold tracking-widest uppercase text-surf-coral block mb-2">Panduan
+            Perjalanan</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-deep-tide mb-4">
+            Cara Menuju Batu Karas dari Berbagai Kota.
+          </h2>
+          <p class="text-sm text-deep-tide/75 leading-relaxed">
+            Meskipun tersembunyi di pesisir selatan Jawa Barat, rute menuju Batu Karas kini sangat mudah diakses lewat
+            berbagai moda transportasi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="bg-white p-6 rounded-xl border border-deep-tide/10">
+            <span class="text-xs font-bold uppercase tracking-wider text-surf-coral block mb-2">Jalur Kereta Api</span>
+            <h3 class="font-serif text-lg font-bold text-deep-tide mb-3">Via Stasiun Banjar</h3>
+            <p class="text-xs text-deep-tide/75 leading-relaxed mb-4">
+              Naik kereta api (KA Pangandaran / Turangga / Lodaya) dari Jakarta atau Bandung menuju Stasiun Banjar. Dari
+              stasiun, lanjutkan perjalanan dengan mobil sewa atau travel sekitar 2–2.5 jam menuju pantai Batu Karas.
+            </p>
+            <span class="text-[11px] text-deep-tide/60 bg-warm-sand/30 px-2.5 py-1 rounded">Rute Paling Populer &
+              Nyaman</span>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-deep-tide/10">
+            <span class="text-xs font-bold uppercase tracking-wider text-surf-coral block mb-2">Jalur Udara</span>
+            <h3 class="font-serif text-lg font-bold text-deep-tide mb-3">Bandara Nusawiru (CJN)</h3>
+            <p class="text-xs text-deep-tide/75 leading-relaxed mb-4">
+              Penerbangan perintis Susi Air mendarat langsung di Bandara Nusawiru Cijulang dari Bandara Halim
+              Perdanakusuma Jakarta. Dari Bandara Nusawiru menuju sekolah kami hanya berjarak 10 menit berkendara.
+            </p>
+            <span class="text-[11px] text-deep-tide/60 bg-warm-sand/30 px-2.5 py-1 rounded">Rute Paling Singkat</span>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-deep-tide/10">
+            <span class="text-xs font-bold uppercase tracking-wider text-surf-coral block mb-2">Jalur Darat
+              Pribadi</span>
+            <h3 class="font-serif text-lg font-bold text-deep-tide mb-3">Mobil Pribadi / Motor</h3>
+            <p class="text-xs text-deep-tide/75 leading-relaxed mb-4">
+              Dari Bandung melalui jalur Nagreg &bull; Tasikmalaya &bull; Ciamis &bull; Pangandaran &bull; Batukaras
+              (sekitar 5–6 jam). Pemandangan sepanjang rute pesisir menyuguhkan perbukitan hijau dan sungai Cijulang
+              yang asri.
+            </p>
+            <span class="text-[11px] text-deep-tide/60 bg-warm-sand/30 px-2.5 py-1 rounded">Road Trip Menawan</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-deep-tide text-salt-white border-t border-salt-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-salt-white/10">
+
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <span class="font-serif text-2xl font-bold tracking-tight mb-2">KALA SURF CO.</span>
+          <p class="text-xs uppercase tracking-widest text-ocean-mist mb-4">Batu Karas &bull; Est. 2018</p>
+          <p class="text-xs text-salt-white/70 leading-relaxed mb-6 max-w-sm">
+            Sekolah surfing berorientasi pada keselamatan, etika laut, dan pelestarian komunitas pesisir di teluk ombak
+            Batu Karas, Jawa Barat.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-salt-white/80">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Musim Ombak Terbaik: Sepanjang Tahun</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Navigasi</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="index.html" class="hover:text-surf-coral transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-surf-coral transition-colors">Tentang Kami</a></li>
+            <li><a href="lessons.html" class="hover:text-surf-coral transition-colors">Program Lesson</a></li>
+            <li><a href="instructors.html" class="hover:text-surf-coral transition-colors">Instruktur</a></li>
+            <li><a href="gallery.html" class="hover:text-surf-coral transition-colors">Galeri Dokumentasi</a></li>
+            <li><a href="contact.html" class="hover:text-surf-coral transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Pilihan Lesson</h4>
+          <ul class="space-y-2.5 text-xs text-salt-white/75">
+            <li><a href="lessons.html#beginner" class="hover:text-surf-coral transition-colors">Beginner Surf Lesson</a>
+            </li>
+            <li><a href="lessons.html#private" class="hover:text-surf-coral transition-colors">Private 1-on-1
+                Coaching</a></li>
+            <li><a href="lessons.html#group" class="hover:text-surf-coral transition-colors">Group & Friends Session</a>
+            </li>
+            <li><a href="lessons.html#intermediate" class="hover:text-surf-coral transition-colors">Intermediate Wave
+                Reading</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider uppercase text-ocean-mist mb-4">Titik Sekolah & Hubungi</h4>
+          <address class="not-italic text-xs text-salt-white/75 space-y-2.5">
+            <p>Jl. Pantai Batu Karas No. 14, Desa Batukaras, Cijulang, Pangandaran, Jawa Barat 46394</p>
+            <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+                class="text-surf-coral font-medium hover:underline">+62 812-3456-7890</a></p>
+            <p>Email: <a href="mailto:hello@kalasurfco.com" class="hover:underline">hello@kalasurfco.com</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-salt-white/60">
+        <p>&copy; 2026 Kala Surf Co. Seluruh hak cipta dilindungi.</p>
+        <p class="text-[11px] text-salt-white/50">
+          Batu Karas, Pangandaran, Jawa Barat &bull; Authentic Surf Sanctuary
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
